@@ -1,5 +1,5 @@
 /*
- * jQuery.spaceTagging 0.1 - slight feature rip-off of HeadSpace2 http://urbangiraffe.com/plugins/headspace2/
+ * jQuery.spaceTagging - slight feature rip-off of HeadSpace2 http://urbangiraffe.com/plugins/headspace2/
  *
  * Copyright (c) 2009 Lim Chee Aun (cheeaun.com)
  * Licensed under the MIT license.
@@ -34,8 +34,8 @@
 
 			var highlightSuggests = function(){
 			  var tags = tagValues();
-			  if (!tags.length) return;
 				suggestedTagsLinks.removeClass(options.suggestedClass);
+			  if (!tags.length) return;
 				var filtered = $.grep(tags, function(val, i){
 					return $.inArray(val, suggestedTags) != -1;
 				});
